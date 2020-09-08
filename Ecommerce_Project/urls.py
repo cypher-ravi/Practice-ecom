@@ -1,12 +1,13 @@
 from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
+from .apps import core
 
 from . views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home')
+    path('', include('Ecommerce_Project.apps.core.urls')),
 ]
 
 if settings.DEBUG:
