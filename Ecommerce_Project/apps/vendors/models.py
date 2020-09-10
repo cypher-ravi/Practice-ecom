@@ -1,13 +1,6 @@
 from django.db import models
-# import Ecommerce_Project.apps.core.models 
-# import Ecommerce_Project.apps.orders.models 
-# from django_countries.fields import CountryField
-# from cities.models import BaseCountry
-# from django.apps import apps
-# order_models = apps.get_model('')
 from phonenumber_field.modelfields import PhoneNumberField
-# from Ecommerce_Project.apps import core
-# from Ecommerce_Project.apps import orders
+
 
 
 GENDER_CHOICES = (
